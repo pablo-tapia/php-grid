@@ -9,13 +9,15 @@ $(function() {
         filtering: true,
         sorting: true,
         autoload: true,
+        paging: true,
         pageSize: 10,
         pageButtonCount: 5,
         controller: {
-            loadData: function() {
+            loadData: function(filter) {
                 return $.ajax({
                     type: "GET",
                     url: "/src/data-request.php",
+                    data: filter
                 });
             } // end loadData
         }, // end controller
