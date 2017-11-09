@@ -1,0 +1,10 @@
+form div {
+    margin: 20px 0;
+}
+div.slider {
+    margin: 50px auto;
+    width: 70%;
+    padding: 50px;
+    border: 1px solid;
+    text-align: center;
+}
